@@ -33,6 +33,10 @@
         name: 'Ingelbert'
       })
       console.log('after call')
+      sdk.getData(data => {
+        process.stdout.write('some data')
+        console.log(data)
+      })
       // sdk.getContent(function (content) {
       //   console.log('getting content')
       //   var quill = new Quill('#editor-container', {
